@@ -13,11 +13,12 @@ public final class UuidVersionPair {
     private final UUID uuid;
     private final long version;
 
-    public UuidVersionPair( UUID uuid, long version ) {
+    private UuidVersionPair( UUID uuid, long version ) {
         this.uuid = NotNull.AssertArgument.namedValue( "uuid", uuid );
         this.version = version;
     }
 
+    @NotNull
     public UUID getUuid() {
         return uuid;
     }

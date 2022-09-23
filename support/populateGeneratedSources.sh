@@ -1,7 +1,7 @@
 #!/bin/bash
 
-if [ ! -f "support/uuid-codec-support-sources-1.0.0.jar" ]; then
-      echo "ERROR: 'support/uuid-codec-support-sources-1.0.0.jar' does not exist"
+if [ ! -f "support/uuid-codec-support-sources-1.0.2.jar" ]; then
+      echo "ERROR: 'support/uuid-codec-support-sources-1.0.2.jar' does not exist"
       exit 1
 fi
 
@@ -35,7 +35,7 @@ fi
 # shellcheck disable=SC2164
 cd target/generated-sources/java
 
-jar -xf ../../../support/uuid-codec-support-sources-1.0.0.jar
+jar -xf ../../../support/uuid-codec-support-sources-1.0.2.jar
 retval=$?
 
 cd ../../..
