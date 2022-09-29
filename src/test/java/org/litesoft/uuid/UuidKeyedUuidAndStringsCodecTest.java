@@ -82,7 +82,6 @@ class UuidKeyedUuidAndStringsCodecTest {
         assertEquals( toEncode.size(), pair.getStrings().size() );
         for ( int i = 0; i < toEncode.size(); i++ ) {
             assertEquals( toEncode.get( i ), pair.getStrings().get( i ), "string-" + i );
-
         }
         // System.out.println( "UuidVersionCodexTest.encodeDecode: " + encoded );
         return encoded;
